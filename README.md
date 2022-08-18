@@ -60,8 +60,19 @@ python src/generate_bitscore.py --file /data/Uniprot_ARG+VF+NS.fasta --db_file /
 ```
 4, Run generate_features/main.py to generate statistical gene sequence patterns for each gene sequence, the options are:
 ```
-python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type AAC --path /src/pssm_profiles --out /src/AAC_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type AAC --out /src/AAC_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type DPC --out /src/DPC_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type DDE --out /src/DDE_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type PAAC --out /src/PAAC_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type QSOrder --out /src/QSOrder_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type PSSMC --path /src/pssm_profiles --out /src/PSSMC_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type RPMPSSM --path /src/pssm_profiles --out /src/RPMPSSM_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type AADPPSSM --path /src/pssm_profiles --out /src/AADPPSSM_encoding.tsv
 
+--file: input protein sequence file in fasta format
+--type: the encoding type
+--path: data file path used for 'PSSMC', 'RPMPSSM' and 'AADPPSSM' encodings
+--out: the generated descriptor file
 ```
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.

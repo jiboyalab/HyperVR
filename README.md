@@ -13,6 +13,8 @@ Uniprot_NS.fasta: 2000 negative genes (neither VFs nor ARGs) in the UNIPROT data
 
 Uniprot_NS_ind.fasta: 209 independent negative genes (neither VFs nor ARGs) in the UNIPROT database.
 
+Database_GENE.zip: The remaining database genes were used as known ARGs and VFs.
+
 # Requirements
 HyperVR is tested to work under:
 

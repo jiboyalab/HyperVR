@@ -10,6 +10,8 @@ To better simultaneous predict VFs and ARGs, we propose a hybrid deep ensemble l
 | Uniprot_VF_ind.fasta| Independent virulence factors in the UNIPROT database |
 | Uniprot_NS.fasta| Negative genes (neither VFs nor ARGs) in the UNIPROT database were used for model training and validation| 
 | Uniprot_NS_ind.fasta|  Independent negative genes (neither VFs nor ARGs) in the UNIPROT database| 
+| Uniprot_ARG+VF+NS.fasta|  Total of 3 types of genes in the UNIPROT database were used for model training and validation| 
+| Label_ARG+VF+NS.csv|  Label of 3 types of genes in the UNIPROT database were used for model training and validation| 
 | Database_GENE.zip| The remaining database genes were used as known ARGs and VFs| 
 
 # Requirements

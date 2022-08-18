@@ -16,5 +16,9 @@ Keras 2.8.0
 numpy 1.21.2
 
 sklearn 1.1.1
+
+#License
+This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.
+
 # Contacts
 If you have any questions or comments, please feel free to email: byj@hnu.edu.cn.

@@ -40,7 +40,9 @@ cd tools/uniref50 && wget -c https://ftp.uniprot.org/pub/databases/uniprot/unire
 ```
 2, Run generate_pssm_profile.py to generate pssm profiles for each gene sequence, the options are:
 ```
-python generate_pssm_profile.py --file 
+python generate_pssm_profile.py --file /data/Uniprot_ARG+VF+NS.fasta --blastpgp /tools/ncbi-blast/ncbi-blast-2.13.0+/bin --db /tools/uniref50/uniref50_blast --outdir /src/pssm_profile
+
+
 --file: protein sequence file in fasta format
 --blastpgp: the path of NCBI psiblast program
 --db: the path of unief50 database

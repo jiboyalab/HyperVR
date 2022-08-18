@@ -38,7 +38,7 @@ cd tools/diamond && wget -c https://github.com/bbuchfink/diamond/releases/downlo
 
 cd tools/uniref50 && wget -c https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.fasta.gz && tar -zxvf uniref50.fasta.gz
 
-makeblastdb -dbtype prot -in uniref50.fasta -input_type fasta -parse_seqids -out uniref50_blast
+/tools/ncbi-blast/ncbi-blast-2.13.0+/bin/makeblastdb -dbtype prot -in uniref50.fasta -input_type fasta -parse_seqids -out uniref50_blast
 
 ```
 2, Run generate_pssm_profile.py to generate pssm profiles for each gene sequence, the options are:

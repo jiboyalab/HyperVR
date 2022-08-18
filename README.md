@@ -37,6 +37,12 @@ cd tools/diamond && wget -c https://github.com/bbuchfink/diamond/releases/downlo
 cd tools/uniref50 && wget -c https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.fasta.gz && tar -zxvf uniref50.fasta.gz
 ```
 2, Run generate_pssm_profile.py to generate pssm profiles for each gene sequence, the options are:
+```
+--file: protein sequence file in fasta format
+--blastpgp: the path of NCBI psiblast program
+--db: the path of unief50 database
+--outdir: the path of out dir
+```
 
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.

@@ -2,11 +2,11 @@
 To better simultaneous predict VFs and ARGs, we propose a hybrid deep ensemble learning approach called HyperVR. By considering both best hit scores and statistical gene sequence patterns, HyperVR combines classical machine learning and deep learning to simultaneously and accurately predict VFs, ARGs and negative genes (neither VFs nor ARGs). This repository contains codes and datas for HyperVR model.
 # Data description
 
-| First Header  | Second Header |
+| File name  | Description |
 | ------------- | ------------- |
+| Uniprot_ARG.fasta  | 2000 antibiotic resistance genes in the UNIPROT database were used for model training and validation  |
 | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-Uniprot_ARG.fasta: 2000 antibiotic resistance genes in the UNIPROT database were used for model training and validation.
+
 
 Uniprot_ARG_ind.fasta: 209 independent antibiotic resistance genes in the UNIPROT database.
 

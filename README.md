@@ -43,14 +43,22 @@ cd tools/uniref50 && wget -c https://ftp.uniprot.org/pub/databases/uniprot/unire
 ```
 2, Run generate_pssm_profile.py to generate pssm profiles for each gene sequence, the options are:
 ```
-python generate_pssm_profile.py --file /data/Uniprot_ARG+VF+NS.fasta --blastpgp /tools/ncbi-blast/ncbi-blast-2.13.0+/bin --db /tools/uniref50/uniref50_blast --outdir /src/pssm_profile
-
+python src/generate_pssm_profile.py --file /data/Uniprot_ARG+VF+NS.fasta --blastpgp /tools/ncbi-blast/ncbi-blast-2.13.0+/bin --db /tools/uniref50/uniref50_blast --outdir /src/pssm_profile
 
 --file: protein sequence file in fasta format
 --blastpgp: the path of NCBI psiblast program
 --db: the path of unief50 database
 --outdir: the path of out dir
 ```
+3, Run generate_bitscore.py to generate bitscore features for each gene sequence, the options are:
+```
+python src/generate_bitscore.py --file /data/Uniprot_ARG+VF+NS.fasta --db_file /data/Database_GENE.fasta --diamond_path /tools/diamond/diamond --outdir /src/bitscore
+--file: protein sequence file in fasta format
+--db_file: protein sequence file in fasta format
+--diamond_path: the path of diamond program
+--outdir: the path of out dir
+```
+
 
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.

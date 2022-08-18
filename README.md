@@ -39,7 +39,6 @@ cd tools/diamond && wget -c https://github.com/bbuchfink/diamond/releases/downlo
 cd tools/uniref50 && wget -c https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.fasta.gz && tar -zxvf uniref50.fasta.gz
 
 /tools/ncbi-blast/ncbi-blast-2.13.0+/bin/makeblastdb -dbtype prot -in uniref50.fasta -input_type fasta -parse_seqids -out uniref50_blast
-
 ```
 2, Run generate_pssm_profile.py to generate pssm profiles for each gene sequence, the options are:
 ```
@@ -52,15 +51,18 @@ python src/generate_pssm_profile.py --file /data/Uniprot_ARG+VF+NS.fasta --blast
 ```
 3, Run generate_bitscore.py to generate bitscore features for each gene sequence, the options are:
 ```
-
 python src/generate_bitscore.py --file /data/Uniprot_ARG+VF+NS.fasta --db_file /data/Database_GENE.fasta --diamond_path /tools/diamond/diamond --outdir /src/bitscore
+
 --file: protein sequence file in fasta format
 --db_file: protein sequence file in fasta format
 --diamond_path: the path of diamond program
 --outdir: the path of out dir
 ```
+4, Run generate_features/main.py to generate statistical gene sequence patterns for each gene sequence, the options are:
+```
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type AAC --path /src/pssm_profiles --out /src/AAC_encoding.tsv
 
-
+```
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.
 

@@ -27,6 +27,12 @@ sklearn 1.1.1
 
 # Quick start
 To reproduce our results:
+1, Download and install the required toolkit
+```
+cd tools && wget -c https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz && tar -zxvf ncbi-blast-2.13.0+-x64-linux.tar.gz
+
+cd tools && wget https://github.com/bbuchfink/diamond/releases/download/v2.0.5/diamond-linux64.tar.gz && tar -zxvf diamond-linux64.tar.gz
+```
 
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.

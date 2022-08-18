@@ -30,9 +30,11 @@ To reproduce our results:
 
 1, Download and install the required toolkit
 ```
-cd tools && wget -c https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz && tar -zxvf ncbi-blast-2.13.0+-x64-linux.tar.gz
+cd tools/ncbi-blast && wget -c https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz && tar -zxvf ncbi-blast-2.13.0+-x64-linux.tar.gz
 
-cd tools && wget -c https://github.com/bbuchfink/diamond/releases/download/v2.0.5/diamond-linux64.tar.gz && tar -zxvf diamond-linux64.tar.gz
+cd tools/diamond && wget -c https://github.com/bbuchfink/diamond/releases/download/v2.0.5/diamond-linux64.tar.gz && tar -zxvf diamond-linux64.tar.gz 
+
+cd tools/uniref50 && wget -c https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.fasta.gz
 ```
 
 # License

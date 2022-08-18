@@ -7,7 +7,7 @@ To better simultaneous predict VFs and ARGs, we propose a hybrid deep ensemble l
 | Uniprot_ARG.fasta  | Antibiotic resistance genes in the UNIPROT database were used for model training and validation  |
 | Uniprot_ARG_ind.fasta  | Independent antibiotic resistance genes in the UNIPROT database  |
 | Uniprot_VF.fasta  | Virulence factors in the UNIPROT database were used for model training and validation  |
-| Uniprot_ARG_ind.fasta| Independent virulence factors in the UNIPROT database |
+| Uniprot_VF_ind.fasta| Independent virulence factors in the UNIPROT database |
 | Uniprot_NS.fasta| Negative genes (neither VFs nor ARGs) in the UNIPROT database were used for model training and validation| 
 | Uniprot_NS_ind.fasta|  Independent negative genes (neither VFs nor ARGs) in the UNIPROT database| 
 | Database_GENE.zip| The remaining database genes were used as known ARGs and VFs| 
@@ -24,6 +24,9 @@ Keras 2.8.0
 numpy 1.21.2
 
 sklearn 1.1.1
+
+# Quick start
+To reproduce our results:
 
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.

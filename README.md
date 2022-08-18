@@ -5,20 +5,12 @@ To better simultaneous predict VFs and ARGs, we propose a hybrid deep ensemble l
 | File name  | Description |
 | ------------- | ------------- |
 | Uniprot_ARG.fasta  | 2000 antibiotic resistance genes in the UNIPROT database were used for model training and validation  |
-| Content Cell  | Content Cell  |
-
-
-Uniprot_ARG_ind.fasta: 209 independent antibiotic resistance genes in the UNIPROT database.
-
-Uniprot_VF.fasta: 2000 virulence factors in the UNIPROT database were used for model training and validation.
-
-Uniprot_ARG_ind.fasta: 209 independent virulence factors in the UNIPROT database.
-
-Uniprot_NS.fasta: 2000 negative genes (neither VFs nor ARGs) in the UNIPROT database were used for model training and validation.
-
-Uniprot_NS_ind.fasta: 209 independent negative genes (neither VFs nor ARGs) in the UNIPROT database.
-
-Database_GENE.zip: The remaining database genes were used as known ARGs and VFs.
+| Uniprot_ARG_ind.fasta  | 209 independent antibiotic resistance genes in the UNIPROT database  |
+| Uniprot_VF.fasta  | 2000 virulence factors in the UNIPROT database were used for model training and validation  |
+| Uniprot_ARG_ind.fasta| 209 independent virulence factors in the UNIPROT database |
+| Uniprot_NS.fasta| 2000 negative genes (neither VFs nor ARGs) in the UNIPROT database were used for model training and validation| 
+| Uniprot_NS_ind.fasta|  209 independent negative genes (neither VFs nor ARGs) in the UNIPROT database| 
+| Database_GENE.zip| The remaining database genes were used as known ARGs and VFs| 
 
 # Requirements
 HyperVR is tested to work under:

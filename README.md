@@ -52,6 +52,7 @@ python src/generate_pssm_profile.py --file /data/Uniprot_ARG+VF+NS.fasta --blast
 ```
 3, Run generate_bitscore.py to generate bitscore features for each gene sequence, the options are:
 ```
+
 python src/generate_bitscore.py --file /data/Uniprot_ARG+VF+NS.fasta --db_file /data/Database_GENE.fasta --diamond_path /tools/diamond/diamond --outdir /src/bitscore
 --file: protein sequence file in fasta format
 --db_file: protein sequence file in fasta format

@@ -77,8 +77,8 @@ python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --typ
 ```
 5, Run HyperVR_cv/main.py to train and validate model by 5-fold cv, the options are:
 ```
-# please do not change the feature file name
-python /src/HyperVR_cv/main.py --feature_path /src --label_path /data/Label_ARG+VF+NS.csv
+# please do not change the feature and label file name
+python /src/HyperVR_cv/main.py --feature_path /src --label_path /data
 
 --feature_path: the feature file path
 --label_path: the label file path

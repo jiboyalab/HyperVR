@@ -8,12 +8,12 @@ from sklearn.ensemble import ExtraTreesClassifier
 import numpy as np
 def ReadMyCsv(SaveList, fileName):
     csv_reader = csv.reader(open(fileName))
-    for row in csv_reader:  # 把每个rna疾病对加入OriginalData，注意表头
+    for row in csv_reader:  
         SaveList.append(row)
     return
 def ReadMyTsv(SaveList, fileName):
     csv_reader = csv.reader(open(fileName),delimiter = '\t')
-    for row in csv_reader:  # 把每个rna疾病对加入OriginalData，注意表头
+    for row in csv_reader:  
         SaveList.append(row)
     return
 def StorFile(data, fileName):
@@ -38,7 +38,7 @@ def MyConfusionMatrix(y_real,y_predict):
     MCC = (TP * TN - FP * FN) / math.sqrt((TP + FP) * (TP + FN) * (TN + FP) * (TN + FN))
     Rec = TP/(TP+FN)
     F1=(2*Prec*Rec)  / (Prec+Rec)
-    # 分母可能出现0，需要讨论待续
+    
     # print('Acc:', round(Acc, 4))
     # print('Sen:', round(Sen, 4))
     # print('Spec:', round(Spec, 4))

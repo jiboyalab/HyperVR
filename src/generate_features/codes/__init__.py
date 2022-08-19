@@ -11,5 +11,5 @@ __all__ = ['readFasta','saveCode', 'checkFasta',
 		   'PAAC', 'APAAC',
 		   'KNNprotein', 'KNNpeptide',
 		   'PSSM', 'SSEC', 'SSEB', 'Disorder', 'DisorderC', 'DisorderB', 'ASA', 'TA',
-		   'NeedlemanWunsch','PSSMC','SFPSSM','RPMPSSM','kmer','AADPPSSM'
+		   'NeedlemanWunsch','PSSMC','SFPSSM','RPMPSSM','kmer','AADPPSSM','OHE'
 		   ]

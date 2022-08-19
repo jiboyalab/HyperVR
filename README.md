@@ -75,6 +75,15 @@ python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --typ
 --path: data file path used for 'PSSMC', 'RPMPSSM' and 'AADPPSSM' encodings
 --out: the generated descriptor file
 ```
+5, Run HyperVR_cv/main.py to train and validate model by 5-fold cv, the options are:
+```
+# please do not change the feature file name
+python /src/HyperVR_cv/main.py --feature_path /src --label_path /data/Label_ARG+VF+NS.csv
+
+--feature_path: the feature file path
+--label_path: the label file path
+
+```
 # License
 This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.
 

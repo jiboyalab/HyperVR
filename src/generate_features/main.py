@@ -19,7 +19,8 @@ if __name__ == '__main__':
 								 'SOCNumber', 'QSOrder',
 								 'PAAC', 'APAAC',
 								 'KNNprotein', 'KNNpeptide',
-								 'PSSM', 'SSEC', 'SSEB', 'Disorder', 'DisorderC', 'DisorderB', 'ASA', 'TA','PSSMC','SFPSSM','RPMPSSM','kmer','AADPPSSM'
+								 'PSSM', 'SSEC', 'SSEB', 'Disorder', 'DisorderC', 
+							 	 'DisorderB', 'ASA', 'TA','PSSMC','SFPSSM','RPMPSSM','kmer','AADPPSSM','OHE'
 								 ],
 						help="the encoding type")
 	parser.add_argument("--path", dest='filePath',

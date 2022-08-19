@@ -27,6 +27,8 @@ numpy 1.21.2
 
 sklearn 1.1.1
 
+Xgboost 1.5.2
+
 # Quick start
 To reproduce our results:
 

@@ -65,6 +65,7 @@ python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --typ
 python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type DDE --out /src/DDE_encoding.tsv
 python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type PAAC --out /src/PAAC_encoding.tsv
 python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type QSOrder --out /src/QSOrder_encoding.tsv
+python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type OHE --out /src/OHE_encoding.tsv
 python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type PSSMC --path /src/pssm_profiles --out /src/PSSMC_encoding.tsv
 python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type RPMPSSM --path /src/pssm_profiles --out /src/RPMPSSM_encoding.tsv
 python /src/generate_features/main.py --file /data/Uniprot_ARG+VF+NS.fasta --type AADPPSSM --path /src/pssm_profiles --out /src/AADPPSSM_encoding.tsv
